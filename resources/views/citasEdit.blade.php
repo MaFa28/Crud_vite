@@ -98,8 +98,8 @@
             @enderror
             <br>
 
-            <label for="comentario"">Comentario: </label><br>
-            <textarea name="comentario"  rows="6" cols="0" value="{{ $cita->comentario  }}"></textarea>
+            <label for="comentario"">Comentario:</label><br>
+            <textarea name="comentario"  rows="6" cols="0">{{ $cita->comentario  }}</textarea>
             @error('comentario')
                 <i>{{ $message }}</i>
             @enderror
