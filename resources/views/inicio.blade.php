@@ -11,6 +11,24 @@
     </head>
 
     <body>
+        <!-- <div class="container"--->
+            <nav class="navbar navbar-expand-sm navbar-dark bg-black">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toogle navigation">
+                        <span class="navbar-toggler-icon">
+
+                        </span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="/citas">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/citas/create">Nueva cita</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
 
 
         <h1>Veterinaria</h1><br>
@@ -18,64 +36,60 @@
         <h2>Listado de Citas</h2><br>
 
 
-        <table >
-            <tr>
-                <th>ID</th>
-                <th>Nombre</th>
-                <th>Correo</th>
-                <th>Telefono</th>
-                <th>Tipo de Mascota</th>
-                <th>Raza</th>
-                <th>Comentario</th>
-                <th>Editar</th>
-                <th>Eliminar</th>
-            </tr>
-            @foreach ($citas as $cita)
+        <div class="table-responsive-xxl">
+            <table class="table table-striped">
                 <tr>
-                    <td>
-                        <a href="/citas/{{ $cita->id }}">
-                        {{ $cita->id }}
-                        </a>
-                    </td>
-
-                    <td>{{ $cita->nombre }}</td>
-                    <td>{{ $cita->correo }}</td>
-                    <td>{{ $cita->telefono }}</td>
-                    <td>{{ $cita->tipomascota }}</td>
-                    <td>{{ $cita->raza }}</td>
-                    <td>{{ $cita->comentario }}</td>
-
-                    <td>
-                        <a href="/citas/{{ $cita->id }}/edit">Editar</a>
-                    </td>
-
-                    <td>
-
-                        <form action="/citas/{{ $cita->id }}" method='POST'>
-                            @csrf
-                            @method('DELETE')
-                            <input type="submit" value="Eliminar">
-                        </form>
-
-                    </td>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                    <th>Telefono</th>
+                    <th>Tipo de Mascota</th>
+                    <th>Raza</th>
+                    <th>Comentario</th>
+                    <th>Editar</th>
+                    <th>Eliminar</th>
                 </tr>
-            @endforeach
-        </table>
+                @foreach ($citas as $cita)
+                    <tr>
+                        <td>
+                            <a href="/citas/{{ $cita->id }}">
+                            {{ $cita->id }}
+                            </a>
+                        </td>
+
+                        <td>{{ $cita->nombre }}</td>
+                        <td>{{ $cita->correo }}</td>
+                        <td>{{ $cita->telefono }}</td>
+                        <td>{{ $cita->tipomascota }}</td>
+                        <td>{{ $cita->raza }}</td>
+                        <td>{{ $cita->comentario }}</td>
+
+                        <td>
+                            <a href="/citas/{{ $cita->id }}/edit">Editar</a>
+                        </td>
+
+                        <td>
+
+                            <form action="/citas/{{ $cita->id }}" method='POST'>
+                                @csrf
+                                @method('DELETE')
+                                <input type="submit" value="Eliminar">
+                            </form>
+
+                        </td>
+                    </tr>
+                @endforeach
+            </table>
+        </div>
+
 
         <br>
 
         <div>
-            <a href="/citas/create">Crear nueva cita</a>
+            <a class="btn btn-primary" href="/citas/create" role="button">Crear nueva cita</a>
         </div>
 
-        <button type="button" class="btn btn-primary">Primary</button>
-        <button type="button" class="btn btn-secondary">Secondary</button>
-        <button type="button" class="btn btn-success">Success</button>
-        <button type="button" class="btn btn-danger">Danger</button>
-        <button type="button" class="btn btn-warning">Warning</button>
-        <button type="button" class="btn btn-info">Info</button>
-        <button type="button" class="btn btn-light">Light</button>
-        <button type="button" class="btn btn-dark">Dark</button>
+
 
 
     </body>
