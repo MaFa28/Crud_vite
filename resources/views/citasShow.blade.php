@@ -2,17 +2,12 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Show</title>
+        @vite(['resources/css/bootstrap.min.css', 'resources/js/bootstrap.min.js'])
     </head>
 
-    <style>
 
-        body{
-        background-color: #00DBDE;
-        background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
-            }
-
-    </style>
 
     <body>
 

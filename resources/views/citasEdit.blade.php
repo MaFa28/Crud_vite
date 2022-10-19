@@ -2,57 +2,12 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Citas</title>
+        @vite(['resources/css/bootstrap.min.css', 'resources/js/bootstrap.min.js'])
     </head>
 
-    <style>
-        body{
-        background-color: #00DBDE;
-        background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
-        }
 
-            input[type="text"], select{
-            width: 60%;
-            padding: 12px 20px;
-            margin: 8px;
-            display: inline-block;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-             }
-
-             input[type="email"], select{
-            width: 60%;
-            padding: 12px 20px;
-            margin: 8px;
-            display: inline-block;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-             }
-
-             textarea {
-                width: 60%;
-                height: 150px;
-                padding: 12px 20px;
-                box-sizing: border-box;
-                border: 2px solid #ccc;
-                border-radius: 4px;
-                background-color: #f8f8f8;
-                resize: none;
-                }
-
-                input[type=button], input[type=submit], input[type=reset] {
-                    background-color: #FC00FF;
-                    border: none;
-                    color: white;
-                    padding: 16px 32px;
-                    text-decoration: none;
-                    margin: 4px 2px;
-                    cursor: pointer;
-                    }
-
-    </style>
 
     <body>
 

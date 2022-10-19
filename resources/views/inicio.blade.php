@@ -2,8 +2,12 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <title>Inicio</title>
-        <link rel="stylesheet" href="">
+
+        @vite(['resources/css/bootstrap.min.css', 'resources/js/bootstrap.min.js'])
+
     </head>
 
     <body>
@@ -63,6 +67,16 @@
         <div>
             <a href="/citas/create">Crear nueva cita</a>
         </div>
+
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark">Dark</button>
+
 
     </body>
 </html>
