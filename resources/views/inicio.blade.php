@@ -3,11 +3,11 @@
     <head>
         <meta charset="utf-8">
         <title>Inicio</title>
+        <link rel="stylesheet" href="">
     </head>
 
     <body>
 
-        <link rel="stylesheet" href="estilos.css">
 
         <h1>Veterinaria</h1><br>
 
