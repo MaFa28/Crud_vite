@@ -6,7 +6,7 @@ export default defineConfig({
         laravel({
             input: [
                 'resources/css/app.css', 'resources/js/app.js',
-                'resources/css/bootstrap.min.css', 'resources/js/bootstrap.min.js',
+                'resources/css/bootstrap.min.css', 'resources/js/popper.min.js','resources/js/bootstrap.min.js',
             ],
             refresh: [
                 ...refreshPaths,

@@ -6,7 +6,7 @@
 
         <title>Inicio</title>
 
-        @vite(['resources/css/bootstrap.min.css', 'resources/js/bootstrap.min.js'])
+        @vite(['resources/css/bootstrap.min.css', 'resources/js/popper.min.js','resources/js/bootstrap.min.js'])
 
     </head>
 
@@ -14,7 +14,7 @@
         <!-- <div class="container"--->
             <nav class="navbar navbar-expand-sm navbar-dark bg-black">
                 <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toogle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toogle navigation">
                         <span class="navbar-toggler-icon">
 
                         </span>
@@ -32,6 +32,8 @@
 
 
         <h1>Veterinaria</h1><br>
+
+        <img src="mascotas1.jpg" class="img-fluid" alt="mascotas" />
 
         <h2>Listado de Citas</h2><br>
 
@@ -88,7 +90,6 @@
         <div>
             <a class="btn btn-primary" href="/citas/create" role="button">Crear nueva cita</a>
         </div>
-
 
 
 

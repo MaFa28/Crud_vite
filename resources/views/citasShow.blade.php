@@ -4,14 +4,15 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Show</title>
-        @vite(['resources/css/bootstrap.min.css', 'resources/js/bootstrap.min.js'])
+        @vite(['resources/css/bootstrap.min.css', 'resources/js/popper.min.js','resources/js/bootstrap.min.js'])
+
     </head>
 
 
 
     <body>
 
-        <link rel="stylesheet" href="estilos.css">
+
 
         <h1>Detalles de la cita</h1>
 
