@@ -29,11 +29,18 @@
                     </div>
                 </div>
             </nav>
+            <br><br><br>
 
 
-        <h1>Veterinaria</h1><br>
+            <div class="position-relative">
+                <div class="position-absolute top-50 start-50 translate-middle">
+                    <h1 class="display-1">Veterinaria</h1><br><br><br>
+                </div>
+            </div>
 
-        <img src="mascotas1.jpg" class="img-fluid" alt="mascotas" />
+
+
+        <img src="/imagenes/mascotas1.jpg" class="img-fluid" alt="mascotas" />
 
         <h2>Listado de Citas</h2><br>
 

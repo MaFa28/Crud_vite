@@ -23,81 +23,80 @@
                     <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link" href="/citas">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" href="/citas/create">Nueva cita</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/citas">Regresar</li>
 
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <form action="/citas" method="POST">
+        <div class="position-relative">
+            <div class="position-absolute top-50 start-50">
+                <form action="/citas" method="POST">
 
 
-                @csrf
-                <div class="mb-3">
-                    <label for="nombre" class="form-label">Nombre: </label>
-                    <input type="text" name="nombre" class="form-control" id="Nombre" value="{{ old('nombre') }}">
-                </div>
-                @error('nombre')
-                    <i>{{ $message }}</i>
-                @enderror
-                <br>
-
-                <div class="mb-3">
-                <label for="correo" class="form-label">Correo: </label>
-                <input type="email" name="correo" class="form-control" id="mail" value="{{ old('correo') }}">
-                </div>
-                @error('correo')
-                    <i>{{ $message }}</i>
-                @enderror
-                <br>
-
-                <div class="mb-3">
-                    <label for="telefono" class="form-label">Telefono</label>
-                    <input type="text" name="telefono" class="form-control" id="Telefono" value="{{ old('telefono') }}">
-                </div>
-                @error('telefono')
+                    @csrf
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre: </label>
+                        <input type="text" name="nombre" class="form-control" id="Nombre" value="{{ old('nombre') }}">
+                    </div>
+                    @error('nombre')
                         <i>{{ $message }}</i>
-                @enderror
-                <br>
+                    @enderror
+                    <br>
 
-                <div class="mb-3">
-                    <label for="tipomascota" class="form-label">Tipo de mascota</label>
-                    <input type="text" name="tipomascota" class="form-control" id="Tipomascota" value="{{ old('tipomascota') }}">
-                </div>
-
-                @error('tipomascota')
-                    <i>{{ $message }}</i>
-                @enderror
-                <br>
-
-                <div>
-                    <label for="raza" class="form-label">Raza</label>
-                    <input type="text" name="raza"  class="form-control" id="Raza" value="{{ old('raza') }}">
-                </div>
-                @error('raza')
+                    <div class="mb-3">
+                    <label for="correo" class="form-label">Correo: </label>
+                    <input type="email" name="correo" class="form-control" id="mail" value="{{ old('correo') }}">
+                    </div>
+                    @error('correo')
                         <i>{{ $message }}</i>
-                @enderror
-                <br>
+                    @enderror
+                    <br>
 
-                <div>
-                    <label for="comentario" class="form-label">Comentario: </label><br>
-                    <textarea name="comentario" class="form-control" rows="6" cols="0" value="{{ old('comentario') }}"></textarea>
-                </div>
-                @error('comentario')
+                    <div class="mb-3">
+                        <label for="telefono" class="form-label">Telefono</label>
+                        <input type="text" name="telefono" class="form-control" id="Telefono" value="{{ old('telefono') }}">
+                    </div>
+                    @error('telefono')
+                            <i>{{ $message }}</i>
+                    @enderror
+                    <br>
+
+                    <div class="mb-3">
+                        <label for="tipomascota" class="form-label">Tipo de mascota</label>
+                        <input type="text" name="tipomascota" class="form-control" id="Tipomascota" value="{{ old('tipomascota') }}">
+                    </div>
+
+                    @error('tipomascota')
                         <i>{{ $message }}</i>
-                @enderror
-                <br>
-                <div class="col-12">
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                </div>
+                    @enderror
+                    <br>
+
+                    <div>
+                        <label for="raza" class="form-label">Raza</label>
+                        <input type="text" name="raza"  class="form-control" id="Raza" value="{{ old('raza') }}">
+                    </div>
+                    @error('raza')
+                            <i>{{ $message }}</i>
+                    @enderror
+                    <br>
+
+                    <div>
+                        <label for="comentario" class="form-label">Comentario: </label><br>
+                        <textarea name="comentario" class="form-control" rows="6" cols="0" value="{{ old('comentario') }}"></textarea>
+                    </div>
+                    @error('comentario')
+                            <i>{{ $message }}</i>
+                    @enderror
+                    <br>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary position-relative">Enviar</button>
+                    </div>
 
 
-        </form>
-
-        <br>
-
-        <div>
-            <a href="/citas">Regresar</a>
+            </form>
+            </div>
         </div>
 
 
