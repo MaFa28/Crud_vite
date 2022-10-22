@@ -50,6 +50,7 @@
                 <tr>
                     <th>ID</th>
                     <th>Nombre</th>
+                    <th>Usuario</th>
                     <th>Correo</th>
                     <th>Telefono</th>
                     <th>Tipo de Mascota</th>
@@ -67,6 +68,7 @@
                         </td>
 
                         <td>{{ $cita->nombre }}</td>
+                        <td>{{ $cita->user->name }}</td>
                         <td>{{ $cita->correo }}</td>
                         <td>{{ $cita->telefono }}</td>
                         <td>{{ $cita->tipomascota }}</td>

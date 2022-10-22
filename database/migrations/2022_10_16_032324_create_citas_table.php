@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('citas', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id')->constrained();
             $table->string('nombre');
             $table->string('correo');
             $table->string('telefono');

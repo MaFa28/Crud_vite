@@ -11,28 +11,7 @@
 
     <body>
 
-        <nav class="navbar navbar-expand-sm navbar-dark bg-black">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toogle navigation">
-                    <span class="navbar-toggler-icon">
-
-                    </span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="/citas">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/citas/create">Nueva cita</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/citas">Regresar</li>
-
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <div class="position-relative">
-            <div class="position-absolute top-50 start-50">
-                <form action="/citas" method="POST">
+            <form action="/citas" method="POST">
 
 
                     @csrf
@@ -91,13 +70,11 @@
                     @enderror
                     <br>
                     <div class="col-12">
-                        <button type="submit" class="btn btn-primary position-relative">Enviar</button>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
                     </div>
 
-
             </form>
-            </div>
-        </div>
+
 
 
     </body>

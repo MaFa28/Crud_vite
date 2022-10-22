@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Cita;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+
 
 class CitaController extends Controller
 {
@@ -15,7 +17,9 @@ class CitaController extends Controller
     public function index()
     {
         //
-        $citas = Cita::all();
+        //$citas = Cita::all();
+        $citas = Auth::user()->citas;
+
         return view('inicio', compact('citas'));
     }
 
@@ -48,6 +52,7 @@ class CitaController extends Controller
             'comentario' => 'required',
         ]);
 
+        $request->merge(['user_id' => Auth::id()]);
         Cita::create($request->all());
 
         return redirect('/citas');
