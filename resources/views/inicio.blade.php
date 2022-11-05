@@ -24,6 +24,7 @@
                         <ul class="navbar-nav">
                             <li class="nav-item"><a class="nav-link" href="/citas">Inicio</a></li>
                             <li class="nav-item"><a class="nav-link" href="/citas/create">Nueva cita</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/dashboard"">Usuario</a></li>
 
                         </ul>
                     </div>

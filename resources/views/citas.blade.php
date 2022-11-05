@@ -72,6 +72,9 @@
                     <div class="col-12">
                         <button type="submit" class="btn btn-primary">Enviar</button>
                     </div>
+                    <div class="col-12">
+                        <a href="/citas">Regresar</a>
+                    </div>
 
             </form>
 

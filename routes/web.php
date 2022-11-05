@@ -18,7 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('citas', CitaController::class);
+Route::resource('citas', CitaController::class);//->middleware('auth');
 
 Route::middleware([
     'auth:sanctum',

@@ -9,6 +9,11 @@ use Illuminate\Support\Facades\Auth;
 
 class CitaController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth')->except('index','show');
+        //only('create');
+    }
     /**
      * Display a listing of the resource.
      *
